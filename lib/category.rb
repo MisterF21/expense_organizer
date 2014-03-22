@@ -51,7 +51,6 @@ class Category
   end
 
   def ==(another_expense)
-    self.description == another_expense.description &&
-    self.id == another_expense.id
+    self.description == another_expense.description
   end
 end

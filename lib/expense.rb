@@ -87,4 +87,9 @@ class Expense
     self.category_id == another_expense.category_id &&
     self.id == another_expense.id
   end
+
+  # def join_exp_cat
+  #   results = DB.exec("SELECT category.* FROM expenses JOIN exp_cat ON (expenses.id = category.expenses_id) JOIN category ON (exp_cat.id = category_id) WHERE expenses.id = '#{@description}")
+  # end
+
 end
